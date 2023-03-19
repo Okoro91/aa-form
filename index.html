@@ -7,6 +7,57 @@
     <title>AA Survey Form</title>
 </head>
 <body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Add user</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+              <option value="guest">Guest</option>
+            </select>
+            <p>Choose your favorite programming language</p>
+            <label>
+                <input type="radio" name="language" value="html">
+                HTML
+              </label>
+
+              <label>
+                <input type="radio" name="language" value="css">
+                CSS
+              </label>
+
+              <label>
+                <input type="radio" name="language" value="javascript">
+                JavaScript
+              </label>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <label for="current-date">Current Date:</label>
+            <input type="date" id="current-date" name="current-date" value="">
+            <label>
+                <input type="checkbox" name="newsletter" value="yes">
+                Sign up for our newsletter
+              </label>
+
+              <label>
+                <input type="checkbox" name="terms" value="yes">
+                I agree to the terms and conditions
+              </label>
+              <button type="submit">Submit</button>
+
+        </fieldset>
+    </form>
 
 </body>
 </html>
